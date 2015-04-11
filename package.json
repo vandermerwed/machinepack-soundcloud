@@ -1,0 +1,43 @@
+{
+  "name": "machinepack-soundcloud",
+  "version": "0.1.3",
+  "description": "Communicate with SoundCloud to authenticate, get profile data, tracks, playlists, and more.",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "machines",
+    "machinepack",
+    "soundcloud",
+    "soundcloud-api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~2.2.4",
+    "test-machinepack-mocha": "^0.2.2"
+  },
+  "dependencies": {
+    "lodash": "^3.6.0",
+    "machine": "^4.0.4",
+    "request": "^2.55.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vandermerwed/machinepack-soundcloud.git"
+  },
+  "machinepack": {
+    "friendlyName": "SoundCloud",
+    "machineDir": "machines/",
+    "iconSrc": "https://a-v2.sndcdn.com/assets/images/sc-icons/ios-a62dfc8f.png",
+    "machines": [
+      "get-access-token",
+      "get-login-url",
+      "get-current-user"
+    ],
+    "devLinks": [
+      "https://developers.soundcloud.com/docs/api/"
+    ],
+    "testsUrl": "https://travis-ci.org/vandermerwed/machinepack-soundcloud"
+  }
+}
