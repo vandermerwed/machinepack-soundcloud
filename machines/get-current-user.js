@@ -70,11 +70,11 @@ module.exports = {
 
        // Parse profile data from the response body
         try {
-          var data = JSON.parse(body);
+          //var data = JSON.parse(body);
 
           //var accessToken = data.access_token;
           //return exits.success({ token: accessToken });
-          return exits.success(data);
+          return exits.success(body);
         }
         catch (e) {
           return exits.error(e);
